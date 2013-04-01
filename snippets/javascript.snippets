@@ -100,3 +100,18 @@ snippet try
 # console.log (Firebug)
 snippet cl
 	console.log(${1});
+
+
+# jasmine style test cases
+
+# describe
+snippet desc
+	describe("${1}", function(){
+	  ${2://test codes here}	
+	});
+
+# test example
+snippet it
+	it("${1:should pass}", function(){
+	  ${2://test codes here}	
+	});
