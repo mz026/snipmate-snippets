@@ -115,3 +115,19 @@ snippet it
 	it("${1:should pass}", function(){
 	  ${2://test codes here}	
 	});
+
+
+snippet bf
+	beforeEach(function(){
+	  ${1://codes here}	
+	});
+
+snippet bfi
+	beforeEach(inject(function(${1:injectables}){
+	  ${2://codes here}
+	}));
+
+snippet iti
+	it("${1:should pass}", inject(function(${1:injectables}){
+	  ${2://codes here}
+	}));
