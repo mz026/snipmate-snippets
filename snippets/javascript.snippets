@@ -9,11 +9,18 @@ snippet fun
 	function ${1:function_name} (${2:argument}) {
 		${3:// body...}
 	}
-# Anonymous Function
+# Anonymous Function without semi-colon
 snippet f
 	function(${1}) {
 		${2: // body...}
-	}${3:;}
+	}
+
+# Anonymous Function with semi-colon
+snippet f;
+	function(${1}) {
+		${2: // body...}
+	};
+
 # Immediate function
 snippet (f
 	(function(${1}) {
