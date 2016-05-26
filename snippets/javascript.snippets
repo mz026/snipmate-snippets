@@ -104,28 +104,28 @@ snippet try
 	}
 # console.log (Firebug)
 snippet cl
-	console.log(${1});
+	console.log(${1})
 # jasmine style test cases
 # describe
 snippet desc
-	describe('${1}', function(){
+	describe('${1}', ()=> {
 	  ${2://test codes here}
 	})
 # test example
 snippet it
-	it('${1:should pass}', function(){
+	it('${1:should pass}', ()=> {
 	  ${2://test codes here}
 	})
 snippet itd
-	it('${1:should pass}', function(done){
+	it('${1:should pass}', (done)=> {
 	  ${2://test codes here}
 	})
 snippet bef
-	beforeEach(function(){
+	beforeEach(()=> {
 	  ${1://codes here}
 	})
 snippet aft
-	afterEach(function(){
+	afterEach(()=> {
 	  ${1://codes here}
 	})
 snippet befi
